@@ -37,7 +37,7 @@
             font-size: 10px;
             color: #888;
             margin-bottom: 10px;
-            /* min-height: 24px; */
+            min-height: 24px;
         }
 
         .result {
