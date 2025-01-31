@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css Link  -->
+    <link rel="stylesheet" href="./Style/style.css">
+    <!-- Titel  -->
+    <title>Calculator 1.0</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div class="expression" id="expression"></div>
+            <div class="result" id="result">0</div>
+        </div>
+        <div class="buttons">
+            <button class="function" onclick="clearAll()">AC</button>
+            <button class="function" onclick="appendNumber('.')">.</button>
+            <button class="function" onclick="percentage()">%</button>
+            <button class="operator" onclick="setOperator('÷')">÷</button>
+            
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button class="operator" onclick="setOperator('×')">×</button>
+            
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button class="operator" onclick="setOperator('-')">-</button>
+            
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button class="operator" onclick="setOperator('+')">+</button>
+            
+            <button onclick="appendNumber('0')" style="grid-column: span 2; width: auto; border-radius: 35px;">0</button>
+            <button onclick="backspace()"><img class="bc-img" src="./Style/Image/backspace.png"></button>
+            <button class="equals" onclick="calculate()">=</button>
+        </div>
+        <div class="copyright"><p>Copyright by Azim 2025</p></div>
+    </div>
+    <!-- JS Link  -->
+    <script src="./script.js"></script>
+</body>
+</html>
